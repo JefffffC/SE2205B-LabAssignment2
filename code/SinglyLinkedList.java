@@ -34,8 +34,13 @@ public class SinglyLinkedList<E>{
     }
 
     public boolean isEmpty(){
-        if (size == 0) return true;
-        else return false;
+        if (size == 0)
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public E first(){
@@ -71,6 +76,7 @@ public class SinglyLinkedList<E>{
             Node<E> currentNode = new Node<E>(element, null);
             tail.setNext(currentNode);
             tail = currentNode;
+            size++;
         }
     }
 

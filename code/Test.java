@@ -22,7 +22,6 @@ public class Test{
     Q.enqueue(d);
     
     n=Q.size();
-    
     for (i=0; i<n-1; i++) {
       d=Q.dequeue();
       System.out.println("Arrival Time: "+d.getArrivalTime()+", Departure Time: "+d.getDepartureTime());
